@@ -20,8 +20,8 @@ export default function Hero() {
               transition={{ duration: 0.7 }}
               className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-wide"
             >
-              LEADFORMULIEREN DIE RESULTATEN{" "}
-              <span className="text-accent">VANGEN</span>
+              SCHERPERE TARGETING, MEER BEET,{" "}
+              <span className="text-accent">VOLLE AGENDA</span>
             </motion.h1>
 
             <motion.p
@@ -30,8 +30,9 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="mt-6 text-lg md:text-xl text-gray-300 max-w-lg"
             >
-              Wij bouwen advertenties en formulieren die jouw sportschool,
-              boksschool of gym vullen met nieuwe leden.
+              FangForm transformeert sportscholen in lead-genererende machines.
+              Wij jagen op de juiste prospects met Meta campagnes die bijten.
+              Jij vangt ze binnen met een volle agenda aan proeflessen.
             </motion.p>
 
             <motion.div

@@ -14,9 +14,9 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "Fang Forms — Leadformulieren die resultaten vangen",
+  title: "FangForm — Scherpere targeting, meer beet, volle agenda",
   description:
-    "Wij bouwen advertenties en formulieren die jouw sportschool, boksschool of gym vullen met nieuwe leden.",
+    "FangForm transformeert sportscholen in lead-genererende machines. Meta campagnes die bijten, volle agenda aan proeflessen.",
 };
 
 export default function RootLayout({

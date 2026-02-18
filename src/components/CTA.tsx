@@ -1,23 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+
+const CALENDLY_URL = "https://calendly.com/fangform/gesprek"; // TODO: replace with real Calendly URL
 
 export default function CTA() {
-  const [formData, setFormData] = useState({
-    naam: "",
-    email: "",
-    telefoon: "",
-    bericht: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Placeholder — connect to form backend
-    alert("Bedankt! We nemen snel contact met je op.");
-    setFormData({ naam: "", email: "", telefoon: "", bericht: "" });
-  };
-
   return (
     <section id="contact" className="py-20 md:py-32 relative overflow-hidden">
       {/* Background glow */}
@@ -25,79 +12,56 @@ export default function CTA() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-accent/15 rounded-full blur-[150px]" />
       </div>
 
-      <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
         >
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl tracking-wide">
             KLAAR OM TE{" "}
             <span className="text-accent">GROEIEN?</span>
           </h2>
-          <p className="mt-4 text-gray-400 text-lg">
-            Laat je gegevens achter en wij nemen binnen 24 uur contact met je
-            op.
+          <p className="mt-4 text-gray-400 text-lg max-w-xl mx-auto">
+            Plan een vrijblijvend gesprek en ontdek hoe wij jouw sportschool
+            kunnen vullen met nieuwe leden. Van eerste scroll tot betalend lid —
+            wij regelen de volledige funnel.
           </p>
         </motion.div>
 
-        <motion.form
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          onSubmit={handleSubmit}
-          className="space-y-4"
+          className="mt-10"
         >
-          <div className="grid sm:grid-cols-2 gap-4">
-            <input
-              type="text"
-              placeholder="Naam"
-              required
-              value={formData.naam}
-              onChange={(e) =>
-                setFormData({ ...formData, naam: e.target.value })
-              }
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors"
-            />
-            <input
-              type="email"
-              placeholder="E-mailadres"
-              required
-              value={formData.email}
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors"
-            />
-          </div>
-          <input
-            type="tel"
-            placeholder="Telefoonnummer"
-            value={formData.telefoon}
-            onChange={(e) =>
-              setFormData({ ...formData, telefoon: e.target.value })
-            }
-            className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors"
-          />
-          <textarea
-            placeholder="Je bericht (optioneel)"
-            rows={4}
-            value={formData.bericht}
-            onChange={(e) =>
-              setFormData({ ...formData, bericht: e.target.value })
-            }
-            className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors resize-none"
-          />
-          <button
-            type="submit"
-            className="w-full bg-accent hover:bg-accent-dark text-white font-semibold py-4 rounded-lg transition-colors text-lg"
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-accent hover:bg-accent-dark text-white font-semibold px-10 py-4 rounded-lg transition-colors text-lg"
           >
-            Verstuur Bericht
-          </button>
-        </motion.form>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            Plan een Gesprek
+          </a>
+          <p className="mt-4 text-gray-500 text-sm">
+            Gratis &middot; 30 minuten &middot; Geen verplichtingen
+          </p>
+        </motion.div>
       </div>
     </section>
   );

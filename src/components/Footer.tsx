@@ -14,12 +14,12 @@ export default function Footer() {
           {/* Logo & description */}
           <div>
             <span className="font-heading text-2xl tracking-wide">
-              FANG FORMS
+              FANGFORM
             </span>
             <p className="mt-3 text-gray-400 text-sm leading-relaxed max-w-xs">
-              Leadformulieren die resultaten vangen. Wij helpen sportscholen,
-              boksscholen en fitnessclubs groeien met gerichte advertenties en
-              converterende formulieren.
+              Scherpere targeting, meer beet, volle agenda. Wij transformeren
+              sportscholen in lead-genererende machines met Meta campagnes die
+              bijten.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
-          &copy; 2026 Fang Forms. Alle rechten voorbehouden.
+          &copy; 2026 FangForm. Alle rechten voorbehouden.
         </div>
       </div>
     </footer>

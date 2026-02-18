@@ -12,7 +12,7 @@ const stats = [
 const testimonials = [
   {
     quote:
-      "Sinds we met Fang Forms werken, hebben we elke maand minstens 40 nieuwe leads. Onze boksschool is voller dan ooit!",
+      "Sinds we met FangForm werken, hebben we elke maand minstens 40 nieuwe leads. Onze boksschool is voller dan ooit!",
     name: "Mohammed A.",
     role: "Eigenaar Boksschool",
   },
