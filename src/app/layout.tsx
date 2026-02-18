@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl" className={`${inter.variable} ${bebasNeue.variable}`}>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-black text-white`}>{children}</body>
     </html>
   );
 }
