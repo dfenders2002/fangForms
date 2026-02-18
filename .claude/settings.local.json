@@ -12,7 +12,9 @@
       "Bash(gh repo create:*)",
       "Bash(brew install:*)",
       "Bash(gh auth status:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(convert:*)",
+      "Bash(python3:*)"
     ]
   }
 }

@@ -58,21 +58,23 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Logo — cropped via overflow-hidden to remove PNG padding */}
+          {/* Logo card */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex items-start justify-center lg:-mt-4 overflow-hidden w-48 md:w-56 lg:w-64 aspect-square"
+            className="flex items-start justify-center"
           >
-            <Image
-              src="/assets/fangform_white.png"
-              alt="FangForm"
-              width={280}
-              height={280}
-              className="w-[180%] max-w-none -mt-[25%] -ml-[40%] drop-shadow-2xl"
-              priority
-            />
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-6 md:p-8">
+              <Image
+                src="/assets/fangform_white.png"
+                alt="FangForm"
+                width={280}
+                height={280}
+                className="w-44 md:w-52 lg:w-60 drop-shadow-2xl"
+                priority
+              />
+            </div>
           </motion.div>
         </div>
       </div>
