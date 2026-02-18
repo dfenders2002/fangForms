@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Diensten", href: "#diensten" },
@@ -33,8 +34,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="font-heading text-2xl md:text-3xl tracking-wide">
-            FANGFORM
+          <a href="#" className="flex items-center gap-2">
+            <Image
+              src="/assets/fangform_wolf.png"
+              alt="FangForm"
+              width={36}
+              height={36}
+              className="w-8 h-8 md:w-9 md:h-9"
+            />
+            <span className="font-heading text-2xl md:text-3xl tracking-wide">
+              FANGFORM
+            </span>
           </a>
 
           {/* Desktop links */}
