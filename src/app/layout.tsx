@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -26,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl" className={`${inter.variable} ${bebasNeue.variable}`}>
-      <body className={`${inter.className} bg-black text-white`}>{children}</body>
+      <body className={`${inter.className} bg-black text-white`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
