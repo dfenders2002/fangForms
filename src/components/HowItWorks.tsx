@@ -25,7 +25,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="hoe-het-werkt" className="py-20 md:py-32">
+    <section id="hoe-het-werkt" className="scroll-mt-20 md:scroll-mt-24 py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -43,8 +43,15 @@ export default function HowItWorks() {
         </motion.div>
 
         <div className="relative max-w-3xl mx-auto">
-          {/* Vertical line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-white/10 md:-translate-x-px" />
+          {/* Vertical line — accent gradient so it ties into the step circles */}
+          <div
+            className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 md:-translate-x-px rounded-full"
+            style={{
+              background:
+                "linear-gradient(to bottom, transparent 0%, var(--accent) 15%, var(--accent) 85%, transparent 100%)",
+              opacity: 0.4,
+            }}
+          />
 
           {steps.map((step, i) => (
             <motion.div

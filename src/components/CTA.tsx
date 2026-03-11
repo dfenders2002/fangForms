@@ -6,7 +6,7 @@ const CALENDLY_URL = "https://calendly.com/fangform-info/30min"; // TODO: replac
 
 export default function CTA() {
 	return (
-		<section id="contact" className="py-20 md:py-32 relative overflow-hidden">
+		<section id="contact" className="scroll-mt-20 md:scroll-mt-24 py-20 md:py-32 relative overflow-hidden">
 			{/* Background glow */}
 			<div className="absolute inset-0">
 				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-accent/15 rounded-full blur-[150px]" />

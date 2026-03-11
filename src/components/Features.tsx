@@ -6,11 +6,12 @@ const features = [
   {
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
       </svg>
     ),
-    title: "Lead Formulieren",
-    description: "Converterende formulieren op maat gebouwd voor jouw sportschool. Geoptimaliseerd voor maximale conversie.",
+    title: "Content die converteert",
+    description:
+      "Authentieke video's van jouw gym, trainers en leden. Geen stock footage, wel échte verhalen. Professioneel gefilmd en geëdit voor maximale impact op social.",
   },
   {
     icon: (
@@ -28,8 +29,9 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
       </svg>
     ),
-    title: "Funnel Strategie",
-    description: "Van klik tot klant, volledig geoptimaliseerd. Elke stap in de funnel is ontworpen om te converteren.",
+    title: "Lead automation",
+    description:
+      "Van eerste klik tot volle agenda. Geautomatiseerde flows die leads warm houden en omzetten.",
   },
   {
     icon: (
@@ -44,7 +46,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="diensten" className="py-20 md:py-32">
+    <section id="diensten" className="scroll-mt-20 md:scroll-mt-24 pt-10 pb-20 md:pt-16 md:pb-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -57,8 +59,8 @@ export default function Features() {
             ONZE <span className="text-accent">DIENSTEN</span>
           </h2>
           <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
-            Alles wat je nodig hebt om jouw sportschool te laten groeien met een
-            constante stroom aan nieuwe leads.
+            Van video tot volle agenda - wij regelen de complete lead generation
+            voor jouw sportschool.
           </p>
         </motion.div>
 

@@ -11,7 +11,7 @@ export default function Hero() {
 				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px]" />
 			</div>
 
-			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
 				{/* Heading — full width */}
 				<motion.h1
 					initial={{ opacity: 0, y: 40 }}
@@ -32,7 +32,7 @@ export default function Hero() {
 							transition={{ duration: 0.7, delay: 0.2 }}
 							className="text-lg md:text-xl text-gray-300 max-w-lg"
 						>
-							FangForm transformeert sportscholen in lead-genererende machines.
+							Fangform transformeert sportscholen in lead-genererende machines.
 							Wij jagen op de juiste prospects met Meta campagnes die bijten.
 							Jij vangt ze binnen met een volle agenda aan proeflessen.
 						</motion.p>
