@@ -49,12 +49,6 @@ export default function Hero() {
 							>
 								Start Nu
 							</a>
-							<a
-								href="#resultaten"
-								className="border border-white/30 hover:border-white text-white font-semibold px-8 py-3.5 rounded-lg transition-colors text-lg"
-							>
-								Bekijk Resultaten
-							</a>
 						</motion.div>
 					</div>
 
