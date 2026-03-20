@@ -35,13 +35,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <Image
-              src="/assets/fangform-wolf-trimmed.png"
-              alt="FangForm"
-              width={36}
-              height={36}
-              className="w-8 h-8 md:w-9 md:h-9"
-            />
+            <span className="relative block h-8 w-8 shrink-0 overflow-hidden rounded-full bg-black md:h-9 md:w-9">
+              <Image
+                src="/assets/fangform-wolf-black-trimmed.png"
+                alt="FangForm"
+                width={48}
+                height={48}
+                className="absolute left-1/2 top-1/2 h-[135%] w-[135%] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain"
+              />
+            </span>
             <span className="font-heading text-2xl md:text-3xl tracking-wide">
               FANGFORM
             </span>
