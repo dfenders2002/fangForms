@@ -16,7 +16,10 @@
       "Bash(convert:*)",
       "Bash(python3:*)",
       "Bash(lsof:*)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(command -v convert magick sips)",
+      "Bash(node -e \"require\\(''sharp''\\)\")",
+      "Bash(node:*)"
     ]
   }
 }

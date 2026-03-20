@@ -21,7 +21,7 @@ const features = [
 		),
 		title: "Content die converteert",
 		description:
-			"Authentieke video's van jouw gym, trainers en leden. Geen stock footage, wel échte verhalen. Professioneel gefilmd en geëdit voor maximale impact op social media.",
+			"Authentieke video's van jouw gym, trainers en leden. Gefilmd met professionele apparatuur, geëdit voor maximale impact op social media.",
 	},
 	{
 		icon: (
@@ -45,9 +45,9 @@ const features = [
 				/>
 			</svg>
 		),
-		title: "Social Media Ads",
+		title: "Gerichte Meta Campagnes",
 		description:
-			"Meta & Instagram campagnes die scoren. Gerichte advertenties die de juiste doelgroep bereiken.",
+			"Instagram & Facebook ads geoptimaliseerd op geboekte proeflessen, niet vage engagement. Data gedreven optimalisatie voor maximale ROI.",
 	},
 	{
 		icon: (
@@ -65,9 +65,9 @@ const features = [
 				/>
 			</svg>
 		),
-		title: "Lead automation",
+		title: "WhatsApp AI Automation",
 		description:
-			"Van eerste klik tot volle agenda. Geautomatiseerde flows die leads warm houden en omzetten.",
+			"WhatsApp AI-bot kwalificeert en boekt leads automatisch in. Alleen echt geïnteresseerde mensen in jouw agenda. Volledig op auto-pilot!",
 	},
 	{
 		icon: (
@@ -87,7 +87,7 @@ const features = [
 		),
 		title: "Rapportage & Inzicht",
 		description:
-			"Weet precies wat je leads opleveren. Duidelijke rapportages en realtime inzicht in je resultaten.",
+			"Real-time dashboard voor inzicht op leads en geboekte proeflessen + maandelijkse campagne rapportage. Volledige transparantie over je resultaten, altijd inzichtelijk.",
 	},
 ];
 

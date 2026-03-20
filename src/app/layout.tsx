@@ -17,6 +17,14 @@ export const metadata: Metadata = {
 	title: "Fangform — Scherpere targeting, meer beet, volle agenda",
 	description:
 		"FangForm transformeert sportscholen in lead-genererende machines. Meta campagnes die bijten, volle agenda aan proeflessen.",
+	icons: {
+		icon: [
+			{ url: "/favicon.png", sizes: "32x32", type: "image/png" },
+			{ url: "/icon.png", sizes: "48x48", type: "image/png" },
+			{ url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+		],
+		apple: "/apple-touch-icon.png",
+	},
 };
 
 export default function RootLayout({

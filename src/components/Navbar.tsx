@@ -36,7 +36,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <Image
-              src="/assets/fangform_wolf.png"
+              src="/assets/fangform-wolf-trimmed.png"
               alt="FangForm"
               width={36}
               height={36}
