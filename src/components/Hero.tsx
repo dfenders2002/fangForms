@@ -58,17 +58,15 @@ export default function Hero() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.8, delay: 0.3 }}
 					>
-						<div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-3 h-full flex items-center justify-center overflow-hidden">
-							<div className="relative h-28 w-28 overflow-hidden md:h-32 md:w-32">
-								<Image
-									src="/assets/fangform-logo-trimmed.png"
-									alt="FangForm"
-									width={200}
-									height={200}
-									className="absolute left-1/2 top-1/2 h-[116%] w-[116%] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-2xl"
-									priority
-								/>
-							</div>
+						<div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-4 h-full flex items-center justify-center">
+							<Image
+								src="/assets/fangform-logo-trimmed.png"
+								alt="FangForm"
+								width={140}
+								height={140}
+								className="w-28 md:w-32 drop-shadow-2xl"
+								priority
+							/>
 						</div>
 					</motion.div>
 				</div>
