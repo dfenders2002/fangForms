@@ -21,7 +21,25 @@
       "Bash(node -e \"require\\(''sharp''\\)\")",
       "Bash(node:*)",
       "WebFetch(domain:www.studioinframe.com)",
-      "Bash(git remote:*)"
+      "Bash(git remote:*)",
+      "Bash(powershell:*)",
+      "Bash(del:*)",
+      "Skill(update-config)",
+      "Bash(code:*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "netstat -ano 2>/dev/null | grep -q ':3000 ' || (cd 'C:/Users/marin/OneDrive/Bureaublad/fangForms' && npm run dev > /dev/null 2>&1 &)",
+            "statusMessage": "Dev server opstarten...",
+            "async": true
+          }
+        ]
+      }
     ]
   }
 }
