@@ -162,7 +162,7 @@ export default function Features() {
 					<p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-12">
 						Voorbeelden van onze content
 					</p>
-					<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+					<div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
 						{videos.map((item, i) => (
 							<motion.div
 								key={item.label}
