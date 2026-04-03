@@ -20,7 +20,8 @@
       "Bash(command -v convert magick sips)",
       "Bash(node -e \"require\\(''sharp''\\)\")",
       "Bash(node:*)",
-      "WebFetch(domain:www.studioinframe.com)"
+      "WebFetch(domain:www.studioinframe.com)",
+      "Bash(git remote:*)"
     ]
   }
 }
