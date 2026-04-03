@@ -9,7 +9,7 @@ export default function Showcase() {
 	const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
 	return (
-		<section className="py-20 md:py-32">
+		<section id="ons-werk" className="py-20 md:py-32 scroll-mt-20 md:scroll-mt-24">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-12">
 					Ons werk

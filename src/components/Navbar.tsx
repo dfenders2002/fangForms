@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Diensten", href: "#diensten" },
+  { label: "Ons Systeem", href: "#diensten" },
+  { label: "WhatsApp Bot", href: "#whatsapp-bot" },
+  { label: "Ons Werk", href: "#ons-werk" },
   // { label: "Resultaten", href: "#resultaten" }, // Bewezen resultaten - commented out
   // { label: "Prijzen", href: "#prijzen" }, // Onze pakketten - commented out
   { label: "Contact", href: "#contact" },
