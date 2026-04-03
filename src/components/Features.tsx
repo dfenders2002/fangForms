@@ -218,7 +218,7 @@ export default function Features() {
 								onClick={(e) => e.stopPropagation()}
 							>
 								<iframe
-									src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0&modestbranding=1&vq=hd1440`}
+									src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0&modestbranding=1&vq=hd2160`}
 									allow="autoplay; fullscreen"
 									className="w-full h-full"
 								/>
