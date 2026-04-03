@@ -8,9 +8,13 @@ export default function CTA() {
 	return (
 		<section id="contact" className="scroll-mt-20 md:scroll-mt-24 py-20 md:py-32 relative overflow-hidden">
 			{/* Background glow */}
-			<div className="absolute inset-0">
-				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-accent/15 rounded-full blur-[150px]" />
-			</div>
+			<div
+				className="absolute inset-0 overflow-visible"
+				style={{
+					background:
+						"radial-gradient(ellipse 80% 120% at 50% 60%, rgba(157,124,236,0.13) 0%, rgba(157,124,236,0.04) 45%, transparent 70%)",
+				}}
+			/>
 
 			<div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 				<motion.div
