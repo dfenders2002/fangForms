@@ -176,7 +176,7 @@ export default function Features() {
 								>
 									<img
 										src={`https://img.youtube.com/vi/${SHOWCASE_VIDEO_ID}/maxresdefault.jpg`}
-										alt="Social Media Edit — Personal Trainer"
+										alt="Social Media Edit — FitUnity"
 										className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
 									/>
 									{/* Dark gradient at bottom */}
@@ -192,7 +192,7 @@ export default function Features() {
 								</div>
 							</div>
 							<span className="text-gray-400 text-xs tracking-wide text-center">
-								Social Media Edit — Personal Trainer
+								Social Media Edit — FitUnity
 							</span>
 						</motion.div>
 					</div>

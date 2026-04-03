@@ -25,7 +25,8 @@
       "Bash(powershell:*)",
       "Bash(del:*)",
       "Skill(update-config)",
-      "Bash(code:*)"
+      "Bash(code:*)",
+      "Bash(npx vercel:*)"
     ]
   },
   "hooks": {
