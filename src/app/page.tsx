@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
+import AIBot from "@/components/AIBot";
+import Showcase from "@/components/Showcase";
 // import Results from "@/components/Results";
 // import Pricing from "@/components/Pricing";
 import CTA from "@/components/CTA";
@@ -12,8 +13,9 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <Features />
       <HowItWorks />
+      <AIBot />
+      <Showcase />
       {/* Bewezen resultaten - commented out for now */}
       {/* <Results /> */}
       {/* Onze pakketten - commented out for now */}
