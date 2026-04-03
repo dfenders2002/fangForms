@@ -92,11 +92,7 @@ const features = [
 	},
 ];
 
-const videos = [
-	{ label: "Training Highlight", videoId: "" },
-	{ label: "Gym Sfeer Reel", videoId: "" },
-	{ label: "Resultaten Story", videoId: "" },
-];
+const SHOWCASE_VIDEO_ID = "pq1HWpuuFTM";
 
 export default function Features() {
 	const [activeVideo, setActiveVideo] = useState<string | null>(null);
@@ -160,59 +156,45 @@ export default function Features() {
 					className="mt-24"
 				>
 					<p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-12">
-						Voorbeelden van onze content
+						Ons werk
 					</p>
-					<div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-						{videos.map((item, i) => (
-							<motion.div
-								key={item.label}
-								initial={{ opacity: 0, y: 30 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true }}
-								transition={{ duration: 0.5, delay: i * 0.15 }}
-								className="flex flex-col gap-3"
-							>
-								{/* 9:16 card */}
+					<div className="flex justify-center">
+						<motion.div
+							initial={{ opacity: 0, y: 30 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true }}
+							transition={{ duration: 0.5 }}
+							className="flex flex-col gap-4 w-full max-w-[300px]"
+						>
+							{/* Glow behind card */}
+							<div className="relative">
+								<div className="absolute inset-0 rounded-2xl bg-accent/20 blur-2xl scale-95 opacity-60" />
 								<div
-									className="relative w-full overflow-hidden rounded-2xl bg-white/[0.03] border border-white/10 cursor-pointer group"
+									className="relative w-full overflow-hidden rounded-2xl border border-white/10 cursor-pointer group"
 									style={{ aspectRatio: "9/16" }}
-									onClick={() => item.videoId && setActiveVideo(item.videoId)}
+									onClick={() => setActiveVideo(SHOWCASE_VIDEO_ID)}
 								>
-									{/* Thumbnail via YouTube if videoId set */}
-									{item.videoId && (
-										<img
-											src={`https://img.youtube.com/vi/${item.videoId}/hqdefault.jpg`}
-											alt={item.label}
-											className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-500"
-										/>
-									)}
-
-									{/* Placeholder gradient when no video */}
-									{!item.videoId && (
-										<div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-white/[0.02]" />
-									)}
-
-									{/* Play button overlay */}
+									<img
+										src={`https://img.youtube.com/vi/${SHOWCASE_VIDEO_ID}/maxresdefault.jpg`}
+										alt="Social Media Edit — Personal Trainer"
+										className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+									/>
+									{/* Dark gradient at bottom */}
+									<div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/60 to-transparent" />
+									{/* Play button */}
 									<div className="absolute inset-0 flex items-center justify-center">
-										<div className="w-12 h-12 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-											<svg className="w-5 h-5 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+										<div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:bg-accent/50 group-hover:border-accent/60 transition-all duration-300">
+											<svg className="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
 												<path d="M8 5v14l11-7z" />
 											</svg>
 										</div>
 									</div>
-
-									{/* Placeholder text when no video */}
-									{!item.videoId && (
-										<div className="absolute inset-0 flex items-center justify-center">
-											<span className="text-white/20 text-xs text-center px-6">
-												YouTube Short<br />wordt hier geplaatst
-											</span>
-										</div>
-									)}
 								</div>
-								<span className="text-gray-400 text-xs tracking-wide text-center">{item.label}</span>
-							</motion.div>
-						))}
+							</div>
+							<span className="text-gray-400 text-xs tracking-wide text-center">
+								Social Media Edit — Personal Trainer
+							</span>
+						</motion.div>
 					</div>
 				</motion.div>
 
