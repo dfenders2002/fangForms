@@ -96,7 +96,7 @@ export default function AIBot() {
 										</svg>
 									</div>
 									<div className="flex-1 min-w-0">
-										<p className="text-white text-sm font-semibold">FangForm AI Bot</p>
+										<p className="text-white text-sm font-semibold">Fangform AI Bot</p>
 										<div className="flex items-center gap-1.5">
 											<span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
 											<p className="text-green-400 text-xs">Online</p>
