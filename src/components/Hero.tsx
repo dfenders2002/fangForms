@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Hero() {
 	return (
-		<section className="relative min-h-screen flex items-center overflow-hidden pt-20">
+		<section className="relative md:min-h-screen flex md:items-center overflow-hidden pt-28 md:pt-20 pb-16 md:pb-0">
 			{/* Background glow */}
 			<div className="absolute inset-0 overflow-hidden">
 				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px]" />
 			</div>
 
-			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
+			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6 md:pt-12">
 				{/* Heading — full width */}
 				<h1
 					className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-wide animate-fade-up"
@@ -18,7 +18,7 @@ export default function Hero() {
 				</h1>
 
 				{/* Description left + logo right */}
-				<div className="flex flex-col lg:flex-row lg:items-stretch gap-3 mt-8">
+				<div className="flex flex-col lg:flex-row lg:items-stretch gap-8 lg:gap-3 mt-8">
 					<div className="flex-1">
 						<p
 							className="text-lg md:text-xl text-gray-300 max-w-lg animate-fade-up-delay-1"
@@ -33,15 +33,15 @@ export default function Hero() {
 						>
 							<a
 								href="#contact"
-								className="bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-3.5 rounded-lg transition-colors text-lg"
+								className="bg-accent hover:bg-accent-dark text-white font-semibold px-12 py-3.5 rounded-lg transition-colors text-lg"
 							>
 								Start Nu
 							</a>
 						</div>
 					</div>
 
-					{/* Logo card — same height as text + buttons */}
-					<div className="animate-fade-up-delay-1">
+					{/* Logo card — desktop only */}
+					<div className="hidden lg:block animate-fade-up-delay-1">
 						<div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-4 h-full flex items-center justify-center">
 							<Image
 								src="/assets/fangform-logo-trimmed.png"
