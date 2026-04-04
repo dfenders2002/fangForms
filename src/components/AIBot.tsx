@@ -105,14 +105,18 @@ export default function AIBot() {
 								</div>
 
 								{/* Messages */}
-								<div className="px-3 py-4 space-y-2 bg-[#0d0d0d] min-h-[420px] max-h-[420px] overflow-hidden">
+								<motion.div
+									className="px-3 py-4 space-y-2 bg-[#0d0d0d] min-h-[420px] max-h-[420px] overflow-hidden"
+									initial="hidden"
+									whileInView="visible"
+									viewport={{ once: true, margin: "0px 0px -75px 0px" }}
+									variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.06 } } }}
+								>
 									{messages.map((msg, i) => (
 										<motion.div
 											key={i}
-											initial={{ opacity: 0, y: 6 }}
-											whileInView={{ opacity: 1, y: 0 }}
-											viewport={{ once: true, margin: "0px 0px -75px 0px" }}
-											transition={{ duration: 0.15, delay: i * 0.02 }}
+											variants={{ hidden: { opacity: 0, y: 8 }, visible: { opacity: 1, y: 0 } }}
+											transition={{ duration: 0.25 }}
 											className={`flex ${msg.from === "lead" ? "justify-end" : "justify-start"}`}
 										>
 											<div
@@ -129,7 +133,7 @@ export default function AIBot() {
 											</div>
 										</motion.div>
 									))}
-								</div>
+								</motion.div>
 
 								{/* Input bar */}
 								<div className="flex items-center gap-2 px-3 py-3 bg-[#1a1a1a] border-t border-white/5">
