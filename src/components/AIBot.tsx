@@ -24,17 +24,17 @@ export default function AIBot() {
 	return (
 		<section id="whatsapp-bot" className="py-20 md:py-32 relative overflow-hidden scroll-mt-20 md:scroll-mt-24">
 			{/* Background glow */}
-			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
+			<div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
 
 			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="grid lg:grid-cols-2 gap-16 items-center">
 
 					{/* Left — copy */}
 					<motion.div
-						initial={{ opacity: 0, x: -16 }}
-						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, y: 16 }}
+						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true, margin: "0px 0px -75px 0px" }}
-						transition={{ duration: 0.3 }}
+						transition={{ duration: 0.4 }}
 					>
 						<span className="inline-block text-accent text-sm font-semibold uppercase tracking-widest mb-4">
 							AI Lead Kwalificatie
@@ -79,10 +79,10 @@ export default function AIBot() {
 
 					{/* Right — WhatsApp mockup */}
 					<motion.div
-						initial={{ opacity: 0, x: 16 }}
-						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, y: 16 }}
+						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true, margin: "0px 0px -75px 0px" }}
-						transition={{ duration: 0.3 }}
+						transition={{ duration: 0.4, delay: 0.1 }}
 						className="flex justify-center lg:justify-end"
 					>
 						<div className="w-full max-w-sm">
