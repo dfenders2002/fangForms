@@ -21,7 +21,7 @@ export default function CTA() {
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					transition={{ duration: 0.6 }}
+					transition={{ duration: 0.4 }}
 				>
 					<h2 className="font-heading text-4xl md:text-5xl lg:text-6xl tracking-wide">
 						KLAAR OM TE <span className="text-accent">GROEIEN?</span>
@@ -37,7 +37,7 @@ export default function CTA() {
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					transition={{ duration: 0.6, delay: 0.2 }}
+					transition={{ duration: 0.4, delay: 0.1 }}
 					className="mt-10"
 				>
 					<a

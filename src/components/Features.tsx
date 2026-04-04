@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 const features = [
@@ -107,7 +108,7 @@ export default function Features() {
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					transition={{ duration: 0.6 }}
+					transition={{ duration: 0.4 }}
 					className="text-center mb-16"
 				>
 					<h2 className="font-heading text-4xl md:text-5xl lg:text-6xl tracking-wide">
@@ -126,7 +127,7 @@ export default function Features() {
 							initial={{ opacity: 0, y: 40 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
-							transition={{ duration: 0.5, delay: i * 0.1 }}
+							transition={{ duration: 0.4, delay: i * 0.08 }}
 							className="group relative p-6 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-accent/50 transition-all duration-300"
 						>
 							{/* Hover glow */}
@@ -152,7 +153,7 @@ export default function Features() {
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					transition={{ duration: 0.6, delay: 0.2 }}
+					transition={{ duration: 0.4, delay: 0.1 }}
 					className="mt-24"
 				>
 					<p className="text-center text-gray-400 text-sm uppercase tracking-widest mb-12">
@@ -163,7 +164,7 @@ export default function Features() {
 							initial={{ opacity: 0, y: 30 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
-							transition={{ duration: 0.5 }}
+							transition={{ duration: 0.4 }}
 							className="flex flex-col gap-4 w-full max-w-[300px]"
 						>
 							{/* Glow behind card */}
@@ -174,10 +175,12 @@ export default function Features() {
 									style={{ aspectRatio: "9/16" }}
 									onClick={() => setActiveVideo(SHOWCASE_VIDEO_ID)}
 								>
-									<img
+									<Image
 										src={`https://img.youtube.com/vi/${SHOWCASE_VIDEO_ID}/maxresdefault.jpg`}
 										alt="Social Media Edit — FitUnity"
-										className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+										fill
+										sizes="300px"
+										className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
 									/>
 									{/* Dark gradient at bottom */}
 									<div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/60 to-transparent" />

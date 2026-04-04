@@ -34,7 +34,7 @@ export default function AIBot() {
 						initial={{ opacity: 0, x: -30 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: true }}
-						transition={{ duration: 0.6 }}
+						transition={{ duration: 0.4 }}
 					>
 						<span className="inline-block text-accent text-sm font-semibold uppercase tracking-widest mb-4">
 							AI Lead Kwalificatie
@@ -63,7 +63,7 @@ export default function AIBot() {
 									initial={{ opacity: 0, y: 20 }}
 									whileInView={{ opacity: 1, y: 0 }}
 									viewport={{ once: true }}
-									transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
+									transition={{ duration: 0.3, delay: 0.1 + i * 0.08 }}
 									className="rounded-xl border border-white/10 bg-white/[0.03] p-4 text-center"
 								>
 									<p className="font-heading text-2xl text-accent tracking-wide">
@@ -82,7 +82,7 @@ export default function AIBot() {
 						initial={{ opacity: 0, x: 30 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: true }}
-						transition={{ duration: 0.6, delay: 0.15 }}
+						transition={{ duration: 0.4, delay: 0.1 }}
 						className="flex justify-center lg:justify-end"
 					>
 						<div className="w-full max-w-sm">
@@ -112,7 +112,7 @@ export default function AIBot() {
 											initial={{ opacity: 0, y: 10 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											viewport={{ once: true }}
-											transition={{ duration: 0.3, delay: 0.3 + i * 0.07 }}
+											transition={{ duration: 0.25, delay: 0.15 + i * 0.05 }}
 											className={`flex ${msg.from === "lead" ? "justify-end" : "justify-start"}`}
 										>
 											<div

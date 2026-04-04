@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 const SHOWCASE_VIDEO_ID = "ozV-4QRtOR4";
@@ -20,7 +21,7 @@ export default function Showcase() {
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
-						transition={{ duration: 0.6 }}
+						transition={{ duration: 0.4 }}
 						className="flex flex-col gap-4 w-full max-w-[300px]"
 					>
 						<div className="relative">
@@ -30,10 +31,12 @@ export default function Showcase() {
 								style={{ aspectRatio: "9/16" }}
 								onClick={() => setActiveVideo(SHOWCASE_VIDEO_ID)}
 							>
-								<img
+								<Image
 									src={`https://img.youtube.com/vi/${SHOWCASE_VIDEO_ID}/maxresdefault.jpg`}
 									alt="Social Media Edit — FitUnity"
-									className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+									fill
+									sizes="300px"
+									className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
 								/>
 								<div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/60 to-transparent" />
 								<div className="absolute inset-0 flex items-center justify-center">

@@ -15,6 +15,12 @@ const config: Config = {
         heading: ["var(--font-bebas-neue)", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
       },
+      animation: {
+        "fade-up": "fade-up 0.4s ease-out both",
+        "fade-up-delay-1": "fade-up 0.4s ease-out 0.1s both",
+        "fade-up-delay-2": "fade-up 0.4s ease-out 0.15s both",
+        "slide-down": "slide-down 0.3s ease-out both",
+      },
     },
   },
   plugins: [],

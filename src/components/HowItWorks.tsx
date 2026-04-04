@@ -63,7 +63,7 @@ export default function HowItWorks() {
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					transition={{ duration: 0.6 }}
+					transition={{ duration: 0.4 }}
 					className="text-center mb-16 md:mb-20"
 				>
 					<span className="inline-block text-accent text-sm font-semibold uppercase tracking-widest mb-4">
@@ -90,7 +90,7 @@ export default function HowItWorks() {
 									initial={{ opacity: 0, scale: 0.8 }}
 									whileInView={{ opacity: 1, scale: 1 }}
 									viewport={{ once: true }}
-									transition={{ duration: 0.4, delay: i * 0.12 }}
+									transition={{ duration: 0.35, delay: i * 0.08 }}
 									className={`relative z-10 flex-shrink-0 w-12 h-12 rounded-full border-2 flex items-center justify-center ring-4 ring-black ${
 										step.highlight
 											? "bg-black border-accent text-accent"
@@ -103,7 +103,7 @@ export default function HowItWorks() {
 									initial={{ opacity: 0, y: 16 }}
 									whileInView={{ opacity: 1, y: 0 }}
 									viewport={{ once: true }}
-									transition={{ duration: 0.45, delay: i * 0.12 + 0.1 }}
+									transition={{ duration: 0.35, delay: i * 0.08 + 0.05 }}
 									className={`relative flex-1 min-w-0 rounded-xl border p-6 ${
 										step.highlight
 											? "border-accent/60 bg-accent/10 shadow-[0_0_40px_-8px_rgba(157,124,236,0.35)]"
@@ -142,7 +142,7 @@ export default function HowItWorks() {
 								initial={{ opacity: 0, y: 30 }}
 								whileInView={{ opacity: 1, y: 0 }}
 								viewport={{ once: true }}
-								transition={{ duration: 0.5, delay: i * 0.12 }}
+								transition={{ duration: 0.4, delay: i * 0.08 }}
 								className={`relative flex flex-col rounded-2xl border p-6 ${
 									step.highlight
 										? "border-accent/60 bg-accent/10 shadow-[0_0_40px_-8px_rgba(157,124,236,0.35)]"

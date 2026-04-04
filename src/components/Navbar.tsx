@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const navLinks = [
@@ -24,11 +23,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 animate-slide-down ${
         scrolled ? "bg-black/90 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
@@ -42,6 +38,7 @@ export default function Navbar() {
               width={36}
               height={36}
               className="w-8 h-8 md:w-9 md:h-9"
+              priority
             />
             <span className="font-heading text-2xl md:text-3xl tracking-wide">
               FANGFORM
@@ -94,9 +91,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
+        <div
           className="md:hidden bg-black/95 backdrop-blur-md border-t border-white/10"
         >
           <div className="px-4 py-4 flex flex-col gap-4">
@@ -118,8 +113,8 @@ export default function Navbar() {
               Plan een Gesprek
             </a>
           </div>
-        </motion.div>
+        </div>
       )}
-    </motion.nav>
+    </nav>
   );
 }

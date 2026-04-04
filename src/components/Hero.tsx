@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Hero() {
@@ -13,35 +10,26 @@ export default function Hero() {
 
 			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
 				{/* Heading — full width */}
-				<motion.h1
-					initial={{ opacity: 0, y: 40 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.7 }}
-					className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-wide"
+				<h1
+					className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-wide animate-fade-up"
 				>
 					SCHERPERE TARGETING, MEER BEET,{" "}
 					<span className="text-accent">VOLLE AGENDA</span>
-				</motion.h1>
+				</h1>
 
 				{/* Description left + logo right */}
 				<div className="flex flex-col lg:flex-row lg:items-stretch gap-3 mt-8">
 					<div className="flex-1">
-						<motion.p
-							initial={{ opacity: 0, y: 30 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.7, delay: 0.2 }}
-							className="text-lg md:text-xl text-gray-300 max-w-lg"
+						<p
+							className="text-lg md:text-xl text-gray-300 max-w-lg animate-fade-up-delay-1"
 						>
 							Fangform transformeert sportscholen in lead-genererende machines.
 							Wij jagen op de juiste prospects met Meta campagnes die bijten.
 							Jij vangt ze binnen met een volle agenda aan proeflessen.
-						</motion.p>
+						</p>
 
-						<motion.div
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.7, delay: 0.4 }}
-							className="mt-6 flex flex-wrap gap-4"
+						<div
+							className="mt-6 flex flex-wrap gap-4 animate-fade-up-delay-2"
 						>
 							<a
 								href="#contact"
@@ -49,15 +37,11 @@ export default function Hero() {
 							>
 								Start Nu
 							</a>
-						</motion.div>
+						</div>
 					</div>
 
 					{/* Logo card — same height as text + buttons */}
-					<motion.div
-						initial={{ opacity: 0, scale: 0.9 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ duration: 0.8, delay: 0.3 }}
-					>
+					<div className="animate-fade-up-delay-1">
 						<div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-4 h-full flex items-center justify-center">
 							<Image
 								src="/assets/fangform-logo-trimmed.png"
@@ -68,7 +52,7 @@ export default function Hero() {
 								priority
 							/>
 						</div>
-					</motion.div>
+					</div>
 				</div>
 			</div>
 		</section>
