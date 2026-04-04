@@ -31,10 +31,10 @@ export default function AIBot() {
 
 					{/* Left — copy */}
 					<motion.div
-						initial={{ opacity: 0, x: -30 }}
+						initial={{ opacity: 0, x: -16 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true, margin: "0px 0px 200px 0px" }}
-						transition={{ duration: 0.4 }}
+						viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+						transition={{ duration: 0.3 }}
 					>
 						<span className="inline-block text-accent text-sm font-semibold uppercase tracking-widest mb-4">
 							AI Lead Kwalificatie
@@ -60,10 +60,10 @@ export default function AIBot() {
 							{stats.map((stat, i) => (
 								<motion.div
 									key={stat.label}
-									initial={{ opacity: 0, y: 20 }}
+									initial={{ opacity: 0, y: 10 }}
 									whileInView={{ opacity: 1, y: 0 }}
-									viewport={{ once: true, margin: "0px 0px 200px 0px" }}
-									transition={{ duration: 0.25, delay: i * 0.05 }}
+									viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+									transition={{ duration: 0.2, delay: i * 0.04 }}
 									className="rounded-xl border border-white/10 bg-white/[0.03] p-4 text-center"
 								>
 									<p className="font-heading text-2xl text-accent tracking-wide">
@@ -79,10 +79,10 @@ export default function AIBot() {
 
 					{/* Right — WhatsApp mockup */}
 					<motion.div
-						initial={{ opacity: 0, x: 30 }}
+						initial={{ opacity: 0, x: 16 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true, margin: "0px 0px 200px 0px" }}
-						transition={{ duration: 0.3, delay: 0.05 }}
+						viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+						transition={{ duration: 0.3 }}
 						className="flex justify-center lg:justify-end"
 					>
 						<div className="w-full max-w-sm">
@@ -109,10 +109,10 @@ export default function AIBot() {
 									{messages.map((msg, i) => (
 										<motion.div
 											key={i}
-											initial={{ opacity: 0, y: 10 }}
+											initial={{ opacity: 0, y: 6 }}
 											whileInView={{ opacity: 1, y: 0 }}
-											viewport={{ once: true, margin: "0px 0px 200px 0px" }}
-											transition={{ duration: 0.2, delay: i * 0.03 }}
+											viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+											transition={{ duration: 0.15, delay: i * 0.02 }}
 											className={`flex ${msg.from === "lead" ? "justify-end" : "justify-start"}`}
 										>
 											<div

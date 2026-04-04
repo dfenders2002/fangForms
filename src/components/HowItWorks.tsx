@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 const steps = [
 	{
 		number: "01",
@@ -55,17 +53,18 @@ const arrowIcon = (
 	</svg>
 );
 
+const delayClasses = [
+	"animate-fade-up-slow",
+	"animate-fade-up-slow-1",
+	"animate-fade-up-slow-2",
+	"animate-fade-up-slow-3",
+];
+
 export default function HowItWorks() {
 	return (
 		<section id="diensten" className="scroll-mt-20 md:scroll-mt-24 py-20 md:py-32">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<motion.div
-					initial={{ opacity: 0, y: 30 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true, margin: "0px 0px 200px 0px" }}
-					transition={{ duration: 0.4 }}
-					className="text-center mb-16 md:mb-20"
-				>
+				<div className="text-center mb-16 md:mb-20 animate-fade-up-slow">
 					<span className="inline-block text-accent text-sm font-semibold uppercase tracking-widest mb-4">
 						Ons systeem
 					</span>
@@ -75,7 +74,7 @@ export default function HowItWorks() {
 					<p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
 						Van de eerste advertentie tot een gekwalificeerde afspraak in jouw agenda. Volledig geautomatiseerd, zodat jij je kunt focussen op wat je het beste doet.
 					</p>
-				</motion.div>
+				</div>
 
 				{/* Mobile: vertical timeline */}
 				<div className="relative max-w-2xl mx-auto lg:hidden">
@@ -86,25 +85,17 @@ export default function HowItWorks() {
 					<ul className="space-y-0">
 						{steps.map((step, i) => (
 							<li key={step.number} className="relative flex gap-6 pb-10 last:pb-0">
-								<motion.div
-									initial={{ opacity: 0, scale: 0.8 }}
-									whileInView={{ opacity: 1, scale: 1 }}
-									viewport={{ once: true, margin: "0px 0px 200px 0px" }}
-									transition={{ duration: 0.35, delay: i * 0.08 }}
-									className={`relative z-10 flex-shrink-0 w-12 h-12 rounded-full border-2 flex items-center justify-center ring-4 ring-black ${
+								<div
+									className={`relative z-10 flex-shrink-0 w-12 h-12 rounded-full border-2 flex items-center justify-center ring-4 ring-black ${delayClasses[i]} ${
 										step.highlight
 											? "bg-black border-accent text-accent"
 											: "bg-black border-accent/40 text-gray-400"
 									}`}
 								>
 									{step.icon}
-								</motion.div>
-								<motion.div
-									initial={{ opacity: 0, y: 16 }}
-									whileInView={{ opacity: 1, y: 0 }}
-									viewport={{ once: true, margin: "0px 0px 200px 0px" }}
-									transition={{ duration: 0.35, delay: i * 0.08 + 0.05 }}
-									className={`relative flex-1 min-w-0 rounded-xl border p-6 ${
+								</div>
+								<div
+									className={`relative flex-1 min-w-0 rounded-xl border p-6 ${delayClasses[i]} ${
 										step.highlight
 											? "border-accent/60 bg-accent/10 shadow-[0_0_40px_-8px_rgba(157,124,236,0.35)]"
 											: "border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02]"
@@ -124,7 +115,7 @@ export default function HowItWorks() {
 									<p className="text-gray-400 text-[15px] leading-relaxed">
 										{step.description}
 									</p>
-								</motion.div>
+								</div>
 							</li>
 						))}
 					</ul>
@@ -137,13 +128,9 @@ export default function HowItWorks() {
 				>
 					{steps.map((step, i) => (
 						<>
-							<motion.div
+							<div
 								key={step.number}
-								initial={{ opacity: 0, y: 30 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true, margin: "0px 0px 200px 0px" }}
-								transition={{ duration: 0.4, delay: i * 0.08 }}
-								className={`relative flex flex-col rounded-2xl border p-6 ${
+								className={`relative flex flex-col rounded-2xl border p-6 ${delayClasses[i]} ${
 									step.highlight
 										? "border-accent/60 bg-accent/10 shadow-[0_0_40px_-8px_rgba(157,124,236,0.35)]"
 										: "border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02]"
@@ -168,7 +155,7 @@ export default function HowItWorks() {
 								<p className="text-gray-400 text-[15px] leading-relaxed">
 									{step.description}
 								</p>
-							</motion.div>
+							</div>
 
 							{i < steps.length - 1 && (
 								<div key={`arrow-${i}`} className="flex items-center justify-center text-accent/40">
