@@ -20,7 +20,7 @@ export default function Showcase() {
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
+						viewport={{ once: true, margin: "0px 0px 200px 0px" }}
 						transition={{ duration: 0.4 }}
 						className="flex flex-col gap-4 w-full max-w-[300px]"
 					>
@@ -75,7 +75,7 @@ export default function Showcase() {
 							onClick={(e) => e.stopPropagation()}
 						>
 							<iframe
-								src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0&modestbranding=1&vq=hd2160`}
+								src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0&modestbranding=1&vq=hd1440`}
 								allow="autoplay; fullscreen"
 								className="w-full h-full"
 							/>

@@ -20,7 +20,7 @@ export default function CTA() {
 				<motion.div
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true }}
+					viewport={{ once: true, margin: "0px 0px 200px 0px" }}
 					transition={{ duration: 0.4 }}
 				>
 					<h2 className="font-heading text-4xl md:text-5xl lg:text-6xl tracking-wide">
@@ -36,7 +36,7 @@ export default function CTA() {
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true }}
+					viewport={{ once: true, margin: "0px 0px 200px 0px" }}
 					transition={{ duration: 0.4, delay: 0.1 }}
 					className="mt-10"
 				>

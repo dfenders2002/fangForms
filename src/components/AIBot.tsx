@@ -33,7 +33,7 @@ export default function AIBot() {
 					<motion.div
 						initial={{ opacity: 0, x: -30 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true }}
+						viewport={{ once: true, margin: "0px 0px 200px 0px" }}
 						transition={{ duration: 0.4 }}
 					>
 						<span className="inline-block text-accent text-sm font-semibold uppercase tracking-widest mb-4">
@@ -62,8 +62,8 @@ export default function AIBot() {
 									key={stat.label}
 									initial={{ opacity: 0, y: 20 }}
 									whileInView={{ opacity: 1, y: 0 }}
-									viewport={{ once: true }}
-									transition={{ duration: 0.3, delay: 0.1 + i * 0.08 }}
+									viewport={{ once: true, margin: "0px 0px 200px 0px" }}
+									transition={{ duration: 0.25, delay: i * 0.05 }}
 									className="rounded-xl border border-white/10 bg-white/[0.03] p-4 text-center"
 								>
 									<p className="font-heading text-2xl text-accent tracking-wide">
@@ -81,8 +81,8 @@ export default function AIBot() {
 					<motion.div
 						initial={{ opacity: 0, x: 30 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true }}
-						transition={{ duration: 0.4, delay: 0.1 }}
+						viewport={{ once: true, margin: "0px 0px 200px 0px" }}
+						transition={{ duration: 0.3, delay: 0.05 }}
 						className="flex justify-center lg:justify-end"
 					>
 						<div className="w-full max-w-sm">
@@ -111,8 +111,8 @@ export default function AIBot() {
 											key={i}
 											initial={{ opacity: 0, y: 10 }}
 											whileInView={{ opacity: 1, y: 0 }}
-											viewport={{ once: true }}
-											transition={{ duration: 0.25, delay: 0.15 + i * 0.05 }}
+											viewport={{ once: true, margin: "0px 0px 200px 0px" }}
+											transition={{ duration: 0.2, delay: i * 0.03 }}
 											className={`flex ${msg.from === "lead" ? "justify-end" : "justify-start"}`}
 										>
 											<div

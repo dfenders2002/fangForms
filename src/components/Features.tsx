@@ -107,7 +107,7 @@ export default function Features() {
 				<motion.div
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true }}
+					viewport={{ once: true, margin: "0px 0px 200px 0px" }}
 					transition={{ duration: 0.4 }}
 					className="text-center mb-16"
 				>
@@ -126,7 +126,7 @@ export default function Features() {
 							key={feature.title}
 							initial={{ opacity: 0, y: 40 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
+							viewport={{ once: true, margin: "0px 0px 200px 0px" }}
 							transition={{ duration: 0.4, delay: i * 0.08 }}
 							className="group relative p-6 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-accent/50 transition-all duration-300"
 						>
@@ -152,7 +152,7 @@ export default function Features() {
 				<motion.div
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true }}
+					viewport={{ once: true, margin: "0px 0px 200px 0px" }}
 					transition={{ duration: 0.4, delay: 0.1 }}
 					className="mt-24"
 				>
@@ -163,7 +163,7 @@ export default function Features() {
 						<motion.div
 							initial={{ opacity: 0, y: 30 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
+							viewport={{ once: true, margin: "0px 0px 200px 0px" }}
 							transition={{ duration: 0.4 }}
 							className="flex flex-col gap-4 w-full max-w-[300px]"
 						>
@@ -221,7 +221,7 @@ export default function Features() {
 								onClick={(e) => e.stopPropagation()}
 							>
 								<iframe
-									src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0&modestbranding=1&vq=hd2160`}
+									src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0&modestbranding=1&vq=hd1440`}
 									allow="autoplay; fullscreen"
 									className="w-full h-full"
 								/>
