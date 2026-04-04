@@ -1,5 +1,7 @@
 "use client";
 
+import { Fragment } from "react";
+
 const steps = [
 	{
 		number: "01",
@@ -106,7 +108,7 @@ export default function HowItWorks() {
 											Uniek systeem
 										</span>
 									)}
-									<p className={`font-heading text-xs tracking-widest mb-1 ${step.highlight ? "text-accent" : "text-gray-600"}`}>
+									<p className={`font-heading text-xs tracking-widest mb-1 ${step.highlight ? "text-accent" : "text-gray-500"}`}>
 										{step.number}
 									</p>
 									<h3 className="font-heading text-lg tracking-wide text-white uppercase mb-2">
@@ -127,9 +129,8 @@ export default function HowItWorks() {
 					style={{ gridTemplateColumns: "1fr 2rem 1fr 2rem 1fr 2rem 1fr" }}
 				>
 					{steps.map((step, i) => (
-						<>
+						<Fragment key={step.number}>
 							<div
-								key={step.number}
 								className={`relative flex flex-col rounded-2xl border p-6 ${delayClasses[i]} ${
 									step.highlight
 										? "border-accent/60 bg-accent/10 shadow-[0_0_40px_-8px_rgba(157,124,236,0.35)]"
@@ -146,7 +147,7 @@ export default function HowItWorks() {
 								}`}>
 									{step.icon}
 								</div>
-								<p className={`font-heading text-xs tracking-widest mb-1 ${step.highlight ? "text-accent" : "text-gray-600"}`}>
+								<p className={`font-heading text-xs tracking-widest mb-1 ${step.highlight ? "text-accent" : "text-gray-500"}`}>
 									{step.number}
 								</p>
 								<h3 className="font-heading text-lg tracking-wide text-white uppercase mb-2">
@@ -158,11 +159,11 @@ export default function HowItWorks() {
 							</div>
 
 							{i < steps.length - 1 && (
-								<div key={`arrow-${i}`} className="flex items-center justify-center text-accent/40">
+								<div className="flex items-center justify-center text-accent/40">
 									{arrowIcon}
 								</div>
 							)}
-						</>
+						</Fragment>
 					))}
 				</div>
 			</div>

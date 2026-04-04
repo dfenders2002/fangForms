@@ -20,7 +20,7 @@ export default function CTA() {
 				<motion.div
 					initial={{ opacity: 0, y: 16 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+					viewport={{ once: true, margin: "0px 0px -75px 0px" }}
 					transition={{ duration: 0.3 }}
 				>
 					<h2 className="font-heading text-4xl md:text-5xl lg:text-6xl tracking-wide">
@@ -36,7 +36,7 @@ export default function CTA() {
 				<motion.div
 					initial={{ opacity: 0, y: 10 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+					viewport={{ once: true, margin: "0px 0px -75px 0px" }}
 					transition={{ duration: 0.3, delay: 0.05 }}
 					className="mt-10"
 				>
@@ -61,7 +61,7 @@ export default function CTA() {
 						</svg>
 						Plan een Gesprek
 					</a>
-					<p className="mt-4 text-gray-500 text-sm">
+					<p className="mt-4 text-gray-400 text-sm">
 						Gratis &middot; 30 minuten &middot; Geen verplichtingen
 					</p>
 				</motion.div>

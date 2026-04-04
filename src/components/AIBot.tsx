@@ -33,7 +33,7 @@ export default function AIBot() {
 					<motion.div
 						initial={{ opacity: 0, x: -16 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+						viewport={{ once: true, margin: "0px 0px -75px 0px" }}
 						transition={{ duration: 0.3 }}
 					>
 						<span className="inline-block text-accent text-sm font-semibold uppercase tracking-widest mb-4">
@@ -56,20 +56,20 @@ export default function AIBot() {
 						</p>
 
 						{/* Stats */}
-						<div className="grid grid-cols-3 gap-4">
+						<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 							{stats.map((stat, i) => (
 								<motion.div
 									key={stat.label}
 									initial={{ opacity: 0, y: 10 }}
 									whileInView={{ opacity: 1, y: 0 }}
-									viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+									viewport={{ once: true, margin: "0px 0px -75px 0px" }}
 									transition={{ duration: 0.2, delay: i * 0.04 }}
 									className="rounded-xl border border-white/10 bg-white/[0.03] p-4 text-center"
 								>
 									<p className="font-heading text-2xl text-accent tracking-wide">
 										{stat.value}
 									</p>
-									<p className="text-gray-500 text-xs mt-1 leading-snug">
+									<p className="text-gray-400 text-xs mt-1 leading-snug">
 										{stat.label}
 									</p>
 								</motion.div>
@@ -81,7 +81,7 @@ export default function AIBot() {
 					<motion.div
 						initial={{ opacity: 0, x: 16 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+						viewport={{ once: true, margin: "0px 0px -75px 0px" }}
 						transition={{ duration: 0.3 }}
 						className="flex justify-center lg:justify-end"
 					>
@@ -111,7 +111,7 @@ export default function AIBot() {
 											key={i}
 											initial={{ opacity: 0, y: 6 }}
 											whileInView={{ opacity: 1, y: 0 }}
-											viewport={{ once: true, margin: "0px 0px 400px 0px" }}
+											viewport={{ once: true, margin: "0px 0px -75px 0px" }}
 											transition={{ duration: 0.15, delay: i * 0.02 }}
 											className={`flex ${msg.from === "lead" ? "justify-end" : "justify-start"}`}
 										>

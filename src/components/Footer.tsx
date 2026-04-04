@@ -1,7 +1,6 @@
 const footerLinks = [
   { label: "Ons Systeem", href: "#diensten" },
   { label: "WhatsApp Bot", href: "#whatsapp-bot" },
-  { label: "Hoe Het Werkt", href: "#hoe-het-werkt" },
   { label: "Ons Werk", href: "#ons-werk" },
   // { label: "Resultaten", href: "#resultaten" }, // Bewezen resultaten - commented out
   // { label: "Prijzen", href: "#prijzen" }, // Onze pakketten - commented out
@@ -75,7 +74,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
+        <div className="mt-12 pt-8 border-t border-white/10 text-center text-gray-400 text-sm">
           &copy; 2026 FangForm. Alle rechten voorbehouden.
         </div>
       </div>
