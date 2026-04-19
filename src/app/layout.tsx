@@ -17,9 +17,9 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-	title: "Fangform — Scherpere targeting, meer beet, volle agenda",
+	title: "Fangform | Scherpere targeting, meer beet, volle agenda",
 	description:
-		"FangForm transformeert sportscholen in lead-genererende machines. Meta campagnes die bijten, volle agenda aan proeflessen.",
+		"Fangform transformeert sportscholen in lead-genererende machines. Meta campagnes die bijten, volle agenda aan proeflessen.",
 	icons: {
 		icon: [
 			{ url: "/favicon.png", sizes: "32x32", type: "image/png" },

@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-gray-400 text-sm">
-          &copy; 2026 FangForm. Alle rechten voorbehouden.
+          &copy; 2026 Fangform. Alle rechten voorbehouden.
         </div>
       </div>
     </footer>

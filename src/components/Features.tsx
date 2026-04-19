@@ -115,7 +115,7 @@ export default function Features() {
 						ONZE <span className="text-accent">DIENSTEN</span>
 					</h2>
 					<p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
-						Van video tot volle agenda - wij regelen de complete lead generation
+						Van video tot volle agenda, wij regelen de complete lead generation
 						voor jouw sportschool.
 					</p>
 				</motion.div>

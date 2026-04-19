@@ -45,7 +45,7 @@ export default function Hero() {
 						<div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-4 h-full flex items-center justify-center">
 							<Image
 								src="/assets/fangform-logo-trimmed.png"
-								alt="FangForm"
+								alt="Fangform"
 								width={140}
 								height={140}
 								className="w-28 md:w-32 drop-shadow-2xl"

@@ -100,7 +100,7 @@ export default function Showcase() {
 						>
 							<iframe
 								src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0&modestbranding=1&vq=hd2160`}
-								title="FangForm showcase video"
+								title="Fangform showcase video"
 								allow="autoplay; fullscreen"
 								className="w-full h-full"
 							/>

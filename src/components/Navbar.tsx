@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Ons Systeem", href: "#diensten" },
   { label: "WhatsApp Bot", href: "#whatsapp-bot" },
-  { label: "Ons Werk", href: "#ons-werk" },
+  { label: "Ons Werk", href: "/ons-werk" },
   // { label: "Resultaten", href: "#resultaten" }, // Bewezen resultaten - commented out
   // { label: "Prijzen", href: "#prijzen" }, // Onze pakketten - commented out
   { label: "Contact", href: "#contact" },
@@ -15,6 +16,13 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isSubPage = pathname !== "/";
+
+  const resolveHref = (href: string) => {
+    if (href.startsWith("/")) return href;
+    return isSubPage ? `/${href}` : href;
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -31,10 +39,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <Image
               src="/assets/fangform-wolf-trimmed.png"
-              alt="FangForm"
+              alt="Fangform"
               width={36}
               height={36}
               className="w-8 h-8 md:w-9 md:h-9"
@@ -50,14 +58,14 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={resolveHref(link.href)}
                 className="text-sm text-gray-300 hover:text-white transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <a
-              href="#contact"
+              href={resolveHref("#contact")}
               className="bg-accent hover:bg-accent-dark text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors"
             >
               Plan een Gesprek
@@ -98,7 +106,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={resolveHref(link.href)}
                 onClick={() => setMobileOpen(false)}
                 className="text-gray-300 hover:text-white transition-colors"
               >
@@ -106,7 +114,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#contact"
+              href={resolveHref("#contact")}
               onClick={() => setMobileOpen(false)}
               className="bg-accent hover:bg-accent-dark text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-center"
             >
