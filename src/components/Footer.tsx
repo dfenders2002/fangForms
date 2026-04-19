@@ -1,7 +1,7 @@
 const footerLinks = [
   { label: "Ons Systeem", href: "#diensten" },
   { label: "WhatsApp Bot", href: "#whatsapp-bot" },
-  { label: "Ons Werk", href: "#ons-werk" },
+  { label: "Over Ons", href: "/ons-werk" },
   // { label: "Resultaten", href: "#resultaten" }, // Bewezen resultaten - commented out
   // { label: "Prijzen", href: "#prijzen" }, // Onze pakketten - commented out
   { label: "Contact", href: "#contact" },

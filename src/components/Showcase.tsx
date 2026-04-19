@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const SHOWCASE_VIDEO_ID = "ozV-4QRtOR4";
@@ -77,6 +78,7 @@ export default function Showcase() {
 						</span>
 					</motion.div>
 				</div>
+
 			</div>
 
 			{/* Video modal */}
