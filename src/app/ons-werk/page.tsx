@@ -63,6 +63,7 @@ export default function OnsWerk() {
                   width={0}
                   height={0}
                   sizes="(max-width: 768px) 90vw, 420px"
+                  quality={90}
                   className="w-full h-auto"
                 />
               </div>
@@ -150,6 +151,7 @@ export default function OnsWerk() {
                   width={0}
                   height={0}
                   sizes="(max-width: 768px) 90vw, 420px"
+                  quality={90}
                   className="w-full h-auto"
                 />
               </div>
