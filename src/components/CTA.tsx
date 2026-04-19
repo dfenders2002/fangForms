@@ -90,7 +90,7 @@ export default function CTA() {
 										name="name"
 										type="text"
 										required
-										placeholder="Jouw naam"
+										placeholder="Naam"
 										className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
 									/>
 								</div>
@@ -103,7 +103,7 @@ export default function CTA() {
 										name="email"
 										type="email"
 										required
-										placeholder="jouw@email.nl"
+										placeholder="E-mailadres"
 										className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
 									/>
 								</div>
@@ -117,7 +117,7 @@ export default function CTA() {
 									id="gym"
 									name="gym"
 									type="text"
-									placeholder="Jouw bedrijfsnaam"
+									placeholder="Bedrijfsnaam"
 									className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
 								/>
 							</div>
@@ -130,7 +130,7 @@ export default function CTA() {
 									id="message"
 									name="message"
 									rows={4}
-									placeholder="Vertel ons meer over jouw situatie of stel een vraag..."
+									placeholder="Beschrijf de situatie of stel een vraag..."
 									className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
 								/>
 							</div>
