@@ -42,7 +42,7 @@ export default function OnsWerk() {
             animate="show"
             className="font-heading text-5xl md:text-6xl tracking-wide leading-none mb-10 md:mb-14"
           >
-            ONS <span className="text-accent">WERK</span>
+            OVER <span className="text-accent">ONS</span>
           </motion.h1>
 
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
