@@ -5,13 +5,13 @@ export default function Hero() {
 		<section className="relative md:min-h-screen flex md:items-center overflow-hidden pt-28 md:pt-20 pb-16 md:pb-0">
 			{/* Background glow */}
 			<div className="absolute inset-0 overflow-hidden">
-				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px]" />
+				<div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px]" />
 			</div>
 
 			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6 md:pt-12">
 				{/* Heading — full width */}
 				<h1
-					className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-wide animate-fade-up"
+					className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-wide md:animate-fade-up"
 				>
 					SCHERPERE TARGETING, MEER BEET,{" "}
 					<span className="text-accent">VOLLE AGENDA</span>

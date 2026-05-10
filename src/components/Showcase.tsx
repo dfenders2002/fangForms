@@ -41,7 +41,7 @@ export default function Showcase() {
 						className="flex flex-col gap-4 w-full max-w-[300px]"
 					>
 						<div className="relative">
-							<div className="absolute inset-0 rounded-2xl bg-accent/20 blur-2xl scale-95 opacity-60" />
+							<div className="hidden md:block absolute inset-0 rounded-2xl bg-accent/20 blur-2xl scale-95 opacity-60" />
 							<div
 								role="button"
 								aria-label="Video afspelen: Social Media Edit — FitUnity"
@@ -57,7 +57,6 @@ export default function Showcase() {
 									fill
 									sizes="(max-width: 640px) 300px, 420px"
 									quality={100}
-									unoptimized
 									className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
 								/>
 								<div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/60 to-transparent" />
