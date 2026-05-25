@@ -69,7 +69,7 @@ const features = [
 		),
 		title: "WhatsApp AI Automation",
 		description:
-			"WhatsApp AI-bot kwalificeert en boekt leads automatisch in. Alleen echt geïnteresseerde mensen in jouw agenda. Volledig op auto-pilot!",
+			"WhatsApp AI-bot kwalificeert leads razendsnel. Alleen echt geïnteresseerde mensen bereiken jou. Volledig op maat per bedrijf.",
 	},
 	{
 		icon: (

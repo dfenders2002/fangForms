@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Ons Systeem", href: "#diensten" },
-  { label: "WhatsApp Bot", href: "#whatsapp-bot" },
+  { label: "Lead Kwalificatie", href: "#whatsapp-bot" },
   { label: "Over Ons", href: "/ons-werk" },
   // { label: "Resultaten", href: "#resultaten" }, // Bewezen resultaten - commented out
   // { label: "Prijzen", href: "#prijzen" }, // Onze pakketten - commented out

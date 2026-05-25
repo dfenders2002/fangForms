@@ -11,8 +11,8 @@ const steps = [
 				<path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
 			</svg>
 		),
-		title: "Meta Advertenties",
-		description: "Authentieke videocontent van jouw gym, ingezet als gerichte Instagram en Facebook advertenties. Volledig gericht op geboekte proeflessen.",
+		title: "Professionele 4K Video's",
+		description: "Authentieke content van jouw gym of studio, afgestemd op jouw USP's en doelgroep. Geen standaard marketing filmpjes maar videos die laten zien wat jouw bedrijf speciaal maakt.",
 		highlight: false,
 	},
 	{
@@ -22,8 +22,8 @@ const steps = [
 				<path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
 			</svg>
 		),
-		title: "Lead Forms",
-		description: "Via de advertentie vult de prospect een kort formulier in. Alles komt automatisch in ons systeem terecht en de opvolging gaat direct van start.",
+		title: "Meta Campagne",
+		description: "Die video's worden ingezet als gerichte Instagram en Facebook advertentie. Volledig gericht op de juiste mensen in jouw regio.",
 		highlight: false,
 	},
 	{
@@ -33,8 +33,8 @@ const steps = [
 				<path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
 			</svg>
 		),
-		title: "AI kwalificeert via WhatsApp",
-		description: "Onze AI-bot neemt binnen seconden contact op, stelt de juiste vragen en plant de proefles automatisch in. Alles volledig op auto-pilot.",
+		title: "Kwalificatie op Maat",
+		description: "We stellen de kwalificatie in op de methode die het beste werkt voor jouw bedrijf. Slechte leads worden gefilterd zodat jouw campagne optimaal presteert.",
 		highlight: true,
 	},
 	{
@@ -44,8 +44,8 @@ const steps = [
 				<path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
 			</svg>
 		),
-		title: "Afspraak in jouw agenda",
-		description: "Alleen gekwalificeerde leads landen in jouw agenda. Via ons dashboard heb je altijd live inzicht in je resultaten en geboekte proeflessen.",
+		title: "Inzicht en Resultaten",
+		description: "Via ons dashboard heb je altijd live inzicht in je campagne. Je ziet precies hoeveel leads er binnenkomen, wat ze kosten en hoe de campagne presteert.",
 		highlight: false,
 	},
 ];
